@@ -13,3 +13,6 @@ htmlcov/
 
 # Configuración local de VS Code
 .vscode/
+
+# Reporte generado por las pruebas
+coverage.xml
