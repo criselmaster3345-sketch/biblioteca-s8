@@ -35,7 +35,7 @@ def test_libro_inexistente_muestra_error_de_dominio():
         ServicioReservas(repo).reservar("NO-EXISTE")
 
 
-@pytest.mark.parametrize("codigo", ["", "  ", None])
+@pytest.mark.parametrize("codigo", ["", "  ", None, 123])
 def test_codigo_invalido_es_rechazado(codigo):
     repo = RepositorioEnMemoria([Libro("LIB-001", 2)])
 
